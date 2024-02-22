@@ -1,0 +1,94 @@
+/* COMMON */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #191919;
+  height: 3000px;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #191919;
+}
+img {
+  display: block;
+}
+.inner {
+  width: 1280px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  background-color: #191919;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color .4s;
+}
+.header.transparent {
+  background-color: transparent;
+  position: absolute;
+}
+.header > .inner {
+  height: calc(24px + 40px * 2);
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  height: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.header .logo p {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+.header .menu-bar {
+  display: flex;
+  margin-left: 36px;
+  align-items: center;
+}
+.header .menu-bar .item {
+  padding: 0 12px;
+  cursor: pointer;
+}
+.header .menu-bar .item a {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+.header .menu-bar .item:hover a {
+  font-weight: 700;
+}
+.header .menu-bar .item:first-child {
+  margin-left: 0;
+}
+.header .icon-gnb {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.header .search {
+  padding: 0 8px;
+  cursor: pointer;
+}
+.header .search img {
+  height: 28px;
+}
+.header .login {
+  padding: 0 8px;
+  cursor: pointer;
+}
+.header .login img {
+  height: 28px;
+}

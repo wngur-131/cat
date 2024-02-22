@@ -1,0 +1,15 @@
+@import url("./common.css");
+
+/* VISUAL */
+.visual {
+  background-image: url("../images/cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(40%);
+  position: relative;
+}
+.visual > .inner {
+  height: 600px;
+}
